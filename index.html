@@ -1610,8 +1610,7 @@
             <div class="video-label">✦ Chapitre I ✦</div>
             <div class="yt-container">
                 <!-- Vidéo principale (autoplay après porte) -->
-                <iframe id="yt-main"
-                    src="https://www.youtube.com/embed/rdQLE1uTNvU?enablejsapi=1"
+                <iframe id="yt-main" src="https://www.youtube.com/embed/rdQLE1uTNvU?enablejsapi=1"
                     allow="autoplay; encrypted-media" allowfullscreen>
                 </iframe>
                 <div class="yt-corner yt-corner-tl"></div>
@@ -1626,27 +1625,12 @@
             <div class="video-overlay-bottom"></div>
         </section>
 
-        <!-- SECTION 2 : LA CHANSON QUI EXPLIQUE TOUT MON AMOUR -->
-        <section id="section-song">
-            <div class="song-title" id="song-title">🎵 La chanson qui explique tout mon amour</div>
-            <div class="song-sub" id="song-sub">Celle qui me ramène à toi, quoi qu'il arrive</div>
-            <div class="yt-song-container" id="song-container">
-                <iframe id="yt-song"
-                    src="https://www.youtube.com/embed/GDND88fqt1o?enablejsapi=1"
-                    allow="autoplay; encrypted-media" allowfullscreen>
-                </iframe>
-            </div>
-            <div class="song-quote" id="song-quote">
-                « Même si je perdais la mémoire,<br>cette mélodie me rappellerait ton nom. »
-            </div>
-        </section>
-
+        
         <!-- SECTION 3 : BIRTHDAY -->
         <section id="section-birthday">
             <!-- Hidden audio birthday song -->
             <iframe id="yt-birthday-audio" class="yt-audio-hidden"
-                src="https://www.youtube.com/embed/dNEnzdcnWzE?start=5&enablejsapi=1"
-                allow="autoplay; encrypted-media">
+                src="https://www.youtube.com/embed/dNEnzdcnWzE?start=5&enablejsapi=1" allow="autoplay; encrypted-media">
             </iframe>
 
             <div class="birthday-number" id="bd-num">25</div>
@@ -1721,9 +1705,7 @@
                 <div class="portrait-sticky" id="portrait-stick">
                     <div class="portrait-wrap">
                         <!-- *** REMPLACEZ PAR LE CHEMIN DE VOTRE IMAGE PORTRAIT (PNG) *** -->
-                        <img class="portrait-img-main"
-                            src="images/ramzy-orange.png"
-                            alt="Ramzy en orange">
+                        <img class="portrait-img-main" src="Photo 1 Ram.png" alt="Ramzy en orange">
                         <div class="portrait-frame-deco">
                             <div class="portrait-corner tl"></div>
                             <div class="portrait-corner tr"></div>
@@ -1780,25 +1762,25 @@
             <div class="gallery-masonry">
                 <!-- *** REMPLACEZ LES SOURCES PAR VOS PROPRES IMAGES PNG *** -->
                 <div class="g-item g-item-1" id="gi1" onclick="openLB(this)">
-                    <img src="images/photo1.png" alt="">
+                    <img src="Photo 2 Ram.png" alt="">
                     <div class="g-overlay"></div>
                     <div class="g-border"></div>
                     <div class="g-expand-icon">⤢</div>
                 </div>
                 <div class="g-item g-item-2" id="gi2" onclick="openLB(this)">
-                    <img src="images/photo2.png" alt="">
+                    <img src="Photo 3 Ram.png" alt="">
                     <div class="g-overlay"></div>
                     <div class="g-border"></div>
                     <div class="g-expand-icon">⤢</div>
                 </div>
                 <div class="g-item g-item-3" id="gi3" onclick="openLB(this)">
-                    <img src="images/photo3.png" alt="">
+                    <img src="Photo 4 Ram.png" alt="">
                     <div class="g-overlay"></div>
                     <div class="g-border"></div>
                     <div class="g-expand-icon">⤢</div>
                 </div>
                 <div class="g-item g-item-4" id="gi4" onclick="openLB(this)">
-                    <img src="images/photo4.png" alt="">
+                    <img src="Photo 5 Ram.png" alt="">
                     <div class="g-overlay"></div>
                     <div class="g-border"></div>
                     <div class="g-expand-icon">⤢</div>
@@ -1829,7 +1811,7 @@
                 <div class="famille-photo-side" id="fam-photo">
                     <div class="famille-photo-frame">
                         <!-- *** REMPLACEZ PAR VOTRE PHOTO DE FAMILLE (PNG) *** -->
-                        <img src="images/famille.png" alt="Ramzy et sa famille">
+                        <img src="Photo famille Ram.png" alt="Ramzy et sa famille">
                     </div>
                     <p class="famille-caption">La force de la famille ✦</p>
                 </div>
@@ -1857,6 +1839,21 @@
 
             <div class="final-signature" id="final-sig">Ramzy · 25 ans · 2026</div>
         </section>
+
+        <!-- SECTION 2 : LA CHANSON QUI EXPLIQUE TOUT MON AMOUR -->
+        <section id="section-song">
+            <div class="song-title" id="song-title">🎵 La chanson qui explique tout mon amour</div>
+            <div class="song-sub" id="song-sub">Celle qui me ramène à toi, quoi qu'il arrive</div>
+            <div class="yt-song-container" id="song-container">
+                <iframe id="yt-song" src="https://www.youtube.com/embed/GDND88fqt1o?enablejsapi=1"
+                    allow="autoplay; encrypted-media" allowfullscreen>
+                </iframe>
+            </div>
+            <div class="song-quote" id="song-quote">
+                « Même si je perdais la mémoire,<br>cette mélodie me rappellerait ton nom. »
+            </div>
+        </section>
+
 
     </div><!-- end main-content -->
 
@@ -1944,7 +1941,7 @@
                     // Vidéo chanson
                     const ytSong = document.getElementById('yt-song');
                     ytSong.src = ytSong.src + '&autoplay=1';
-                } catch (e) {}
+                } catch (e) { }
             }, 1800);
         }
 
