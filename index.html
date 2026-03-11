@@ -1691,6 +1691,29 @@
                 height: 200px;
             }
         }
+
+
+        .secret-video {
+    width: 100%;
+    max-height: 60vh;           /* limite la hauteur pour rester dans le modal */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #000;            /* fond noir pour les bandes */
+    border: 1px solid rgba(201, 168, 76, 0.2);
+    box-shadow: 0 0 40px rgba(201, 168, 76, 0.15);
+    margin-bottom: 30px;
+    overflow: hidden;            /* évite tout débordement */
+}
+
+.secret-video video {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 60vh;            /* même limite que le conteneur */
+    object-fit: contain;         /* garde le ratio, ajoute des bandes si besoin */
+    display: block;
+}
     </style>
 </head>
 
@@ -2330,4 +2353,5 @@
 </body>
 
 </html>
+
 
