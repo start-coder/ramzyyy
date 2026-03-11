@@ -1695,24 +1695,38 @@
 
         .secret-video {
     width: 100%;
-    max-height: 60vh;           /* limite la hauteur pour rester dans le modal */
+    max-height: 45vh;  /* réduit pour laisser de la place */
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #000;            /* fond noir pour les bandes */
+    background: #000;
     border: 1px solid rgba(201, 168, 76, 0.2);
     box-shadow: 0 0 40px rgba(201, 168, 76, 0.15);
-    margin-bottom: 30px;
-    overflow: hidden;            /* évite tout débordement */
+    margin-bottom: 20px;
+    overflow: hidden;
 }
 
 .secret-video video {
     width: auto;
     height: auto;
     max-width: 100%;
-    max-height: 60vh;            /* même limite que le conteneur */
-    object-fit: contain;         /* garde le ratio, ajoute des bandes si besoin */
-    display: block;
+    max-height: 45vh;
+    object-fit: contain;
+}
+
+.yt-song-container {
+    width: 100%;
+    aspect-ratio: 16/9;
+    max-height: 35vh;  /* limite la hauteur de la vidéo YouTube */
+    border: 1px solid rgba(201, 168, 76, 0.2);
+    box-shadow: 0 0 40px rgba(201, 168, 76, 0.15);
+    margin-bottom: 20px;
+    background: #000;
+}
+
+.yt-song-container iframe {
+    width: 100%;
+    height: 100%;
 }
     </style>
 </head>
@@ -1758,10 +1772,10 @@
             <div class="secret-video">
                 <div class="song-title">✨ Un moment inoubliable (mdrrr)</div>
                 <div class="song-sub">Princess treatment m'a inondé ce jour là deh! (comme toujours d'ailleurs)</div>
-                <video id="local-video" controls muted>
+                <div><video id="local-video" controls muted>
                     <source src="video.mp4" type="video/mp4">
                     
-                </video>
+                </video></div>
             </div>
 
             <!-- Nouvelle section chanson -->
@@ -2353,5 +2367,6 @@
 </body>
 
 </html>
+
 
 
